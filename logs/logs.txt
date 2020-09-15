@@ -1,0 +1,35 @@
+--------- beginning of crash
+08-25 01:39:51.747  3120  3120 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 3120 (init), pid 3120 (init)
+08-25 01:39:51.843  3120  3120 F libc    : crash_dump helper failed to exec
+08-25 01:46:41.980 13355 13355 E AndroidRuntime: FATAL EXCEPTION: main
+08-25 01:46:41.980 13355 13355 E AndroidRuntime: PID: 13355
+08-25 01:46:41.980 13355 13355 E AndroidRuntime: java.lang.NullPointerException: Attempt to write to field 'float android.view.MotionEvent$PointerCoords.x' on a null object reference
+08-25 01:46:41.980 13355 13355 E AndroidRuntime: 	at com.netease.maxpresent.ProcessMessage.changePointer(ProcessMessage.java:203)
+08-25 01:46:41.980 13355 13355 E AndroidRuntime: 	at com.netease.maxpresent.ProcessMessage.handleMessage(ProcessMessage.java:77)
+08-25 01:46:41.980 13355 13355 E AndroidRuntime: 	at com.netease.maxpresent.MaxPresent.localSocketConsumer(MaxPresent.java:210)
+08-25 01:46:41.980 13355 13355 E AndroidRuntime: 	at com.netease.maxpresent.MaxPresent.main(MaxPresent.java:224)
+08-25 01:46:41.980 13355 13355 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+08-25 01:46:41.980 13355 13355 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:338)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: Error reporting crash
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: java.lang.RuntimeException: Bad file descriptor
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at android.os.BinderProxy.transact(BinderProxy.java:510)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at android.os.ServiceManagerProxy.getService(ServiceManagerNative.java:128)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at android.os.ServiceManager.rawGetService(ServiceManager.java:263)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at android.os.ServiceManager.getService(ServiceManager.java:129)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at android.app.ActivityManager$1.create(ActivityManager.java:4058)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at android.app.ActivityManager$1.create(ActivityManager.java:4055)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at android.util.Singleton.get(Singleton.java:38)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at android.app.ActivityManager.getService(ActivityManager.java:4046)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$KillApplicationHandler.uncaughtException(RuntimeInit.java:145)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1073)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1068)
+08-25 01:46:41.981 13355 13355 E AndroidRuntime: 	at java.lang.Thread.dispatchUncaughtException(Thread.java:2187)
+08-25 01:59:09.956   793   914 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7f287631c40000 in tid 914 (Binder:793_2), pid 793 (surfaceflinger)
+08-25 01:59:10.092 20582 20582 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+08-25 01:59:10.092 20582 20582 F DEBUG   : Build fingerprint: 'Nokia/Dragon_00WW/DRG_sprout:10/QKQ1.190828.002/00WW_4_15F:user/release-keys'
+08-25 01:59:10.092 20582 20582 F DEBUG   : Revision: '0'
+08-25 01:59:10.092 20582 20582 F DEBUG   : ABI: 'arm64'
+08-25 01:59:10.093 20582 20582 F DEBUG   : Timestamp: 2020-08-25 01:59:10+0530
+08-25 01:59:10.093 20582 20582 F DEBUG   : pid: 793, tid: 914, name: Binder:793_2  >>> /system/bin/surfaceflinger <<<
+08-25 01:59:10.093 20582 20582 F DEBUG   : uid: 1000
